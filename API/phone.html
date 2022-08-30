@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phone Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center mt-3">Search Your Phone Here!</h1>
+    <div class="my-5 container">
+        <input type="text" class="form-control" id="text-field" placeholder="Enter your phone name">
+        <br />
+        <button id="search-btn" class="btn btn-primary px-5">Search</button>
+      </div>
+    </section>
+    <!-- card body -->
+    <section class="container mb-5">
+      <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4">
+      </div>
+      <h1 id="alert-text" class="text-warning mt-5 d-none">Enter a right phone name!!!</h1>
+      <div class="d-grid gap-2 col-2 mx-auto mt-2">
+        <button class="btn btn-primary" type="button">Show all ></button>
+      </div>
+    </section>
+    <!-- modals -->
+    <!-- spinner -->
+    <section style="height: 200px;" class="d-flex justify-content-center align-items-center fs-3 d-none container" id="spinner">
+      <div class="">
+        <strong>Loading...</strong>
+        <!-- <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div> -->
+      </div>
+    </section>
+    <script src="js/phone.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
